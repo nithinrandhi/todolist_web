@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lily Script One', cursive;
+}
+body{
+    background:rgb(255, 255, 255);
+    background-image: url('bg5.jpg');
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: cover;
+}
+.heading{
+    color: rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 600px;
+    margin-top: 60px;
+    font-size: 30px;
+    /* padding-top: 50px; */
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 5px auto;
+    /* margin-left: 50px; */
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 28px,0px;
+    font-family:cursive;
+    background-color: rgb(255, 255, 255);
+}
+.column{
+    /* height: 52px; */
+    padding:20px 25px;
+}
+.wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    /* padding-bottom: auto; */
+    /* margin-bottom: 25; */
+
+  }
+
+.place{
+    width: 60%;
+    height: 100%;
+    padding: 5px 20px 0px 25px;
+    font-size: medium;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.area{
+    margin-top: 40px;
+    font-size:20px;
+}
+.save{
+    background: dodgerblue;
+    color:white;
+    font-size: medium;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.save:hover{
+    background: rgb(235, 214, 217);
+}
+.btn1:hover,.btn2:hover{
+    background: rgb(237, 207, 212);
+}
+.column img{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* top: 50%; */
+    /* transform: translate(17px,-50%); */
+}
+.filters{
+    background-color:lightgrey;
+    padding: 20px;
+}
+.filters span{
+    cursor: pointer;
+    margin: 0 28px;
+    font-size: 20px;
+}
+.filters span.active{
+    color:rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.taskbox{
+    margin: 20px 0px;
+}
+.taskbox .task{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+}
+.taskbox .task:last-child{
+    margin-left: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.taskbox.overflow{
+    overflow-y: auto;
+    max-height:400px;
+}
+/* .task.overflow{
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height:10px;
+    max-width: 30px;
+} */
+.task label{
+    display: flex;
+}
+.task label input{
+    margin-top: 1px;
+    margin-right: 12px;
+}
+.task label p.checked{
+    text-decoration: line-through;
+}
+.btn1 {
+    background-color:lightgrey;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn2 {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+/* .edit{
+    margin-left: 300px;
+    margin-right: 0px;
+} */
+/* .delete{
+    margin-left:500px;
+    margin-right: auto;
+} */
+li{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.tt{
+    overflow-y:hidden;
+    max-width: 350px;
+    text-overflow: ellipsis;
+}
+/* #first{
+    background-color: antiquewhite;
+} */
